@@ -1,0 +1,13 @@
+<div>
+  <h1>Ejemplo de DETACH() y DETECTCHANGES()</h1>
+  <h2>
+    El componente detecta los cambios y actualiza la vista cada 3 segundos
+  </h2>
+  <div>
+    <h3>Nombres Aleatorios:</h3>
+    <!-- Al estar consumiendo una funcion getter que devuelve constantemente nuevos nombres, el metodo DETACH y DETECTCHANGES nos aseguran que la vista se actualice sin saturar al usuario. -->
+    <li *ngFor="let nombre of dataListProvider.data">
+      {{ nombre }}
+    </li>
+  </div>
+</div>
